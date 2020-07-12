@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Look Generator</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <span class="navbar-brand mb-0 h1">Desktop Look Generator</span>
+    </nav>
+    </div>
+
+    <div class="container mt-2 mb-lg-0 mb-2">
+        <form class="row">
+            <div class="col form-group">
+                <label for="image-upload">Select an image</label>
+                <input class="form-control-file btn btn-primary" type="file" name="image-upload" id="image-upload">
+            </div>
+            <div class="col form-group">
+                <label for="select-image-alignment">Select alignment</label>
+                <select name="select-image-alignment" id="select-image-alignment" class="form-control">
+                    <option value="image-container--cover">Cover</option>
+                    <option value="image-container--contain">Contain</option>
+                </select>
+            </div>
+            <div class="col form-group">
+                <label for="select-image-size">Select Image Size</label>
+                <select name="select-image-size" id="select-image-size" class="form-control">
+                    <option value="1">640 x 480</option>
+                    <option value="1.25">800 x 600</option>
+                    <option value="1.5">960 × 720</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="row mt-2">
+            <div class="col-lg-8 col-12">
+                <div class="row">
+                    <div class="mx-auto pt-3" id="export-container">
+                        <!-- <span>test123</span>
+                        <div id="myImg" class="image-container image-container--cover"></div> -->
+                        <div class="monitor-container">
+                            <div id="image-to-alignment" class="monitor image-container image-container--cover">
+                                <div class="monitor-stand">
+                                    <div class="grey-shadow"></div>
+                                    <div class="foot bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-12 mt-lg-0 mt-3">
+                <div class="row">
+                    <div class="col-lg-12 col-6">
+                        <!-- <div class="col-12"> -->
+                        <div class="clearfix mb-2">
+                            <input class="float-left mr-2" type="color" id="bg-color" name="bg-color">
+                            <label class="float-left mt-4px" for="bg-color">Image Background</label>
+                        </div>
+                        <div class="clearfix mb-2">
+                            <input class="float-left mr-2" type="color" id="bg-color-monitor" name="bg-color-monitor">
+                            <label class="float-left mt-4px" for="bg-color-monitor">Monitor Border</label>
+                        </div>
+                        <div class="clearfix mb-2">
+                            <input class="float-left mr-2" type="color" id="bg-color-monitor-stand" name="bg-color-monitor-stand">
+                            <label class="float-left mt-4px" for="bg-color-monitor-stand">Monitor Stand</label>
+                        </div>
+                        <!-- </div> -->
+
+                    </div>
+                    <div class="col-lg-12 col-6">
+                        <div class="row">
+                            <div class="col-12 col-4 mt-lg-5">
+                                <button class="btn btn-primary" id="image-download">Download</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/html2canvas/html2canvas.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
+
+<!-- https://codepen.io/willpaige/pen/rFElD -->
